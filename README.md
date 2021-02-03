@@ -32,7 +32,13 @@ Basic Things to Know about IIT Delhi HPC:
 ```
    cp /home/apps/skeleton/.bashrc  $HOME/.bashrc 
    cp /home/apps/skeleton/.bash_profile $HOME/.bash_profile
+   
+   Logout (exit the HPC terminal completely) and login.
+   
    ln -s $SCRATCH $HOME/scratch
+   
+   Currently, all directories are accessible (readable) to all users.
+   To make your directory inaccessible to other users:
    chmod og-rx $SCRATCH
    chmod og-rx $HOME
 ```
